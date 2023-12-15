@@ -1,47 +1,41 @@
-﻿ public abstract class Produto
-    {
-         public string nome { get; set; }
-        public string desc { get; set; }
-        public double preco { get; set; }
-        
-        public void descreverProduto() {
-            Console.WriteLine("Nome do produto: " + this.nome );
-            Console.WriteLine();
-            Console.WriteLine("Descrição: " + this.desc);
-            Console.WriteLine();
-            Console.WriteLine("Preço: R$" + this.preco);
-        }
-    }
-
-      public class adc_produto : Produto
-    {
-       
-    }
+﻿bool voltarMenu1;
 
 
-      class Program
-    {
-        static void Main(string[] args)
-        {
-         int x = 0;
 
          do {
-    int menu;
+        
+              voltarMenu1 = false;
+            Cliente Cliente01 = new Cliente();
+            
+            int menu;
+            double valor;
+          
 
     Console.Clear();
-    if (x > 0)
+    
     {
-        Console.WriteLine("Opção inválida, selecione uma das opções válidas [1-3]");
+        Console.WriteLine("Opção inválida, selecione uma das opções válidas [1-6]");
         Console.WriteLine();
     }
     Console.WriteLine("Selecione uma das opções abaixo:");
     Console.WriteLine();
     Console.WriteLine("1 - Adicionar um produto");
     Console.WriteLine("2 - Ver lista de produtos");
-    Console.WriteLine("3 - Opção 3");
+    Console.WriteLine("3 - Cadastrar Cliente");
+    Console.WriteLine("4 - Depositar saldo");
+    Console.WriteLine("5 - Ve o saldo depositado");
+    Console.WriteLine("6 - Encerrar o codigo");
     Console.WriteLine();
     Console.Write("Selecione uma opção -> ");
     menu  = Int32.Parse(Console.ReadLine());
+   
+     Adc_Produto produto01 = new Adc_Produto();
+     List<Adc_Produto> listaProdutos = new List<Adc_Produto>();
+
+
+    //produto01.nome = "kaua";
+
+           string produto = "";
 
      switch (menu)
      {
@@ -50,50 +44,98 @@
 
             //Cadastrar os produtos //
             
-            int quantidadeProdutos = 5;
-            int i = 0;
-            adc_produto[] produto01 = new adc_produto[quantidadeProdutos];
-            produto01[i] = new adc_produto();
-            
 
+            Console.Clear();
             Console.WriteLine("Digite o nome do produto: ");
-            produto01[i].nome = Console.ReadLine();
+            produto01.nomeProduto = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Digite uma breve descrição do produto: ");
-            produto01[i].desc = Console.ReadLine();
+            produto01.desc = Console.ReadLine();
             Console.WriteLine("Digite o valor do produto: ");
-            produto01[i].preco = Int32.Parse(Console.ReadLine());
+            produto01.preco = Int32.Parse(Console.ReadLine());
             Console.WriteLine();
-            produto01[i].descreverProduto();
+            produto01.descreverProduto();
             Console.WriteLine();
+            produto = produto01.nome;
             Console.WriteLine("Cadastro concluído, digite alguma coisa pra continuar...");
             Console.ReadLine();
-            
-            x = 1;
+            voltarMenu1 = true;
 
-         break;
+            listaProdutos.Add(produto01);
+
+            
+            Console.WriteLine("Digite qualquer tecla para continuar...");
+            Console.ReadLine();
+
+              break;
             
         case 2:
-            if (x > 0)
-            {
-                x = 0;
-            }
-            Console.WriteLine(produto01[i]);
+            Console.Clear();
+           Console.WriteLine("Nome do produto: " + produto01.nomeProduto);
+           Console.WriteLine();
+           Console.WriteLine("Descrição do produto: " + produto01.desc);
+           Console.WriteLine();
+           Console.WriteLine("Preço do produto: R$" + produto01.preco);
+           Console.WriteLine("----------------------------");
+            Console.WriteLine("Nome do produto: " + produto01.nomeProduto2);
+           Console.WriteLine();
+           Console.WriteLine("Descrição do produto: " + produto01.desc2);
+           Console.WriteLine();
+           Console.WriteLine("Preço do produto: R$" + produto01.preco2);
+            Console.WriteLine("Digite qualquer tecla para continuar...");
+            Console.ReadLine();
+            voltarMenu1 = true;
             break;
 
         case 3:
-            Console.WriteLine("C");
+        
+            Console.Clear();
+            Console.WriteLine("Cadastro do cliente");
+            Console.WriteLine("---------------------");
+            Console.Write("Digite seu nome: ");
+            Cliente01.nome = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("Digite seu endereço: ");
+            Cliente01.endereco = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Cadastro concluído, digite qualquer tecla para continuar...");
+            Console.ReadLine();
+            voltarMenu1 = true;
             break;
+
+        case 4:
+          
+          Console.Clear();
+            Console.WriteLine("Depósito de valor em conta");
+            Console.WriteLine("---------------------");
+            Console.Write("Digite o valor a ser depositado: ");
+            valor = Double.Parse(Console.ReadLine());
+            Cliente01.Depositar(valor);
+            Console.WriteLine("Depósito concluído, digite qualquer tecla para continuar...");
+            Console.ReadLine();
+            voltarMenu1 = true;
+          break;
+
+          case 5:
+          Console.Clear();
+          
+          Console.WriteLine(Cliente01.saldo);
+          Console.WriteLine("Digite qualquer tecla para continuar...");
+          Console.ReadLine();
+          voltarMenu1 = true;
+          break;
+
+          case 6:
+          Console.WriteLine("encerrando...");
+          
+          break;
 
         default:
-            x = 1;
+           voltarMenu1 = true;
             break;
     }
-             } while (x > 0);
+             } while (voltarMenu1);
 
-
-        }
-    }
 
 
     
