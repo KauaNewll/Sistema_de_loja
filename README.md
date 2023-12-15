@@ -1,6 +1,8 @@
 # 🛒 Sistema_de_loja 
 Um codigo simples sobre sistema de loja, onde a pessoa coloca o produto que quer, ve os produtos que ja colocou, ve o saldo e se é possivel comprar.
 
+![3D shopping cart with price tags for online shopping and digital marketing ideas_ basket and promotional labels on purple background shopping bag buy sell discount 3d vector icon illustration (1)](https://github.com/KauaNewll/Sistema_de_loja/assets/148343096/d78d5e51-dace-47d5-a2a7-7ea6f764941c)
+
 
 > Status: Em Desenvolvimento ⚠️
 
@@ -17,7 +19,7 @@ Um codigo simples sobre sistema de loja, onde a pessoa coloca o produto que quer
 3. Baixe e instale o Windows Server Core 2022 (Opcional)
 4. Baixe e instale o Visual Studio Code (2016)
 
-## 🚀 Escopo Do Projeto:
+## 🚀 Requisitos Funcionais:
 
 <table> 
 <tr>
@@ -42,11 +44,18 @@ Um codigo simples sobre sistema de loja, onde a pessoa coloca o produto que quer
 </table>
 
 ## 🛠️ Construído com
-Visual Studio Code - C#
+
+<table>
+
+<tr> <td> Visual Studio Code </td> </tr>
+<tr> <td> C# | 8* </td> </tr>
+
+</table>
 
 ## ✒️ Autores
-.Kauã Gabriel e   - Trabalho Inicial
-.Kauã Gabriel e - Documentação
+
++ Kauã Gabriel e  Teves Vinicius - Trabalho de codigo
++ Kauã Gabriel e Teves Vinicius - Documentação
 
 # 🎁 Expressões de gratidão
 Agradecimento ao professor Luis Chaves, orientando o codigo desde o inicio.
