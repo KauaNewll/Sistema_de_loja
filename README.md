@@ -24,6 +24,30 @@ Um codigo simples sobre sistema de loja, onde a pessoa coloca o produto que quer
 <table> 
 <tr>
   <td>
+    Usabilidade:</td>
+  
+  <td>O sistema deve fornecer mensagens claras e intuitivas para orientar o usuário durante a interação com o menu.</td></tr>
+
+<tr><td> Desempenho: </td> <td>As operações do sistema, como cadastro de produtos e clientes, devem ser eficientes, sem atrasos perceptíveis.</td></tr>
+
+<tr><td>Portabilidade: </td> <td>O código deve ser portável, ou seja, capaz de ser executado em diferentes ambientes ou sistemas operacionais sem modificações significativas.</td></tr>
+
+<tr><td>Manutenibilidade:</td> <td>O código deve ser estruturado e documentado de maneira a facilitar a manutenção por outros desenvolvedores.</td></tr>
+
+<tr><td>Eficiência de Memória:</td> <td>O sistema deve gerenciar eficientemente os recursos de memória para evitar vazamentos de memória e otimizar o consumo de recursos.</td></tr>
+
+<tr><td>Escalabilidade:</td> <td>Se aplicável, o código deve ser projetado para suportar um aumento potencial no número de produtos, clientes ou transações sem comprometer o desempenho.</td></tr>
+
+<tr><td>Tratamento de Exceções:</td> <td>O código deve incluir um tratamento adequado de exceções para lidar com situações inesperadas e garantir a estabilidade do sistema.</td></tr>
+
+</tr>
+</table>
+
+## 🚀 Requisitos Não Funcionais: 
+
+<table> 
+<tr>
+  <td>
     Menu Interativo:</td>
   
   <td>Apresenta opções numeradas para o usuário, permitindo adicionar produtos, visualizar a lista de produtos, cadastrar clientes, depositar saldo em uma conta e verificar o saldo depositado.</td></tr>
@@ -43,7 +67,7 @@ Um codigo simples sobre sistema de loja, onde a pessoa coloca o produto que quer
 </tr>
 </table>
 
-## 🛠️ Construído com
+## 🛠️ Construído com:
 
 <table>
 
@@ -58,4 +82,4 @@ Um codigo simples sobre sistema de loja, onde a pessoa coloca o produto que quer
 + Kauã Gabriel e Teves Vinicius - Documentação
 
 # 🎁 Expressões de gratidão
-Agradecimento ao professor Luis Chaves, orientando o codigo desde o inicio.
++ Agradecimento ao professor <strong>Luis Chaves</strong>, orientando o codigo desde o inicio.
