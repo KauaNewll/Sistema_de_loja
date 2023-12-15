@@ -32,7 +32,7 @@ Um codigo simples sobre sistema de loja, onde a pessoa coloca o produto que quer
 
 <tr><td>Ver Lista de Produtos: </td> <td>Mostra a lista de produtos cadastrados até o momento.</td></tr>
 
-<tr><td>Cadastrar Cliente:</td> <td>Solicita nome e CPF do cliente para o cadastro.</td></tr>
+<tr><td>Cadastrar Cliente:</td> <td>Solicita nome e endereço do cliente para o cadastro.</td></tr>
 
 <tr><td>Depositar Saldo:</td> <td>Simula um depósito em conta para o cliente, solicitando o valor a ser depositado.</td></tr>
 
